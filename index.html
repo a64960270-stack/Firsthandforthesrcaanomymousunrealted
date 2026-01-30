@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Student Opinion Anonymous Poll</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="overlay">
+    <h1>Student Opinion Anonymous Poll</h1>
+    <p>Organized by SRC or any candidate. Results will be made available for your perusal</p>
+  </div>
+</section>
+
+<!-- Poll Section -->
+<section class="poll">
+  <h2>Who is your favourite ?</h2>
+
+  <div class="candidates">
+
+    <!-- Candidate Cards -->
+    <div class="card" onclick="selectCandidate('UMB (Dungu)')">
+      <img src="umb.jpg" alt="UMB">
+      <h3>UMB</h3>
+    </div>
+
+    <div class="card" onclick="selectCandidate('Nasir (Dungu)')">
+      <img src="nasir.jpg" alt="Nasir">
+      <h3>Nasir</h3>
+    </div>
+
+    <div class="card" onclick="selectCandidate('Peneric (Dungu)')">
+      <img src="peneric.jpg" alt="Peneric">
+      <h3>Peneric</h3>
+    </div>
+
+    <div class="card" onclick="selectCandidate('Solomon (Dungu)')">
+      <img src="solomon.jpg" alt="Solomon">
+      <h3>Solomon</h3>
+    </div>
+
+    <div class="card" onclick="selectCandidate('Salim (Dungu)')">
+      <img src="salim.jpg" alt="Salim">
+      <h3>Salim</h3>
+    </div>
+
+    <div class="card" onclick="selectCandidate('Apiiga (Dungu)')">
+      <img src="apiiga.jpg" alt="Apiiga">
+      <h3>Apiiga</h3>
+    </div>
+
+    <div class="card" onclick="selectCandidate('Mens (Dungu)')">
+      <img src="mens.jpg" alt="Mens">
+      <h3>Mens</h3>
+    </div>
+
+    <div class="card" onclick="selectCandidate('Iddriss (Dungu)')">
+      <img src="iddriss.jpg" alt="Iddriss">
+      <h3>Iddriss</h3>
+    </div>
+
+    <div class="card" onclick="selectCandidate('Ken (City Campus)')">
+      <img src="ken.jpg" alt="Ken">
+      <h3>Ken</h3>
+    </div>
+
+    <div class="card" onclick="selectCandidate('Yellow Man (City Campus)')">
+      <img src="yellowman.jpg" alt="Yellow Man">
+      <h3>Yellow Man</h3>
+    </div>
+
+    <div class="card none" onclick="selectCandidate('None of them')">
+      <h3>None of them</h3>
+    </div>
+
+  </div>
+
+  <textarea id="message" placeholder="Optional message to candidate..."></textarea>
+
+  <button onclick="submitVote()">Submit Vote</button>
+
+  <p id="status"></p>
+</section>
+
+<!-- Modal for full image -->
+<div id="photoModal" class="modal">
+  <span class="modal-close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
